@@ -1,12 +1,9 @@
-jobs:
-- name: yes-concourse-contd
-  plan:
-  - task: issue-response
-    config:
-      platform: linux
-      image_resource:
-        type: docker-image
-        source: {repository: ubuntu}
-      run:
-        path: echo
-        args: ["We see you, Concourse."]
+- task: issue-response
+  config:
+    platform: linux
+    image_resource:
+      type: docker-image
+      source: {repository: ubuntu}
+    run:
+      path: echo
+      args: ["We see you, Concourse."]
