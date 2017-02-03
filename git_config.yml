@@ -5,6 +5,7 @@ image_resource:
   type: docker-image
   source: {repository: busybox}
 
+inputs: scripts
+
 run:
-  path: echo
-  args: ["We see you, Concourse."]
+  path: scripts/response.sh
