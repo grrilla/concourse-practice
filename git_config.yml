@@ -9,4 +9,4 @@ inputs:
   - name: scripts
 
 run:
-  path: scripts/response.sh
+  path: ./scripts/response.sh
